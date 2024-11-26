@@ -1,0 +1,132 @@
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    background-image: linear-gradient(rgba(81, 111, 112, 0.409),rgba(114, 145, 175, 0.5)),url();
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    background-image: linear-gradient(rgba(81, 111, 112, 0.409),rgba(114, 145, 175, 0.5)),url(Images/Vicky.jpg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.todo-container {
+    padding: 20px;
+    text-align: center;
+}
+
+#task-input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#task-input:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px 0;
+}
+
+#task-list li {
+    background: #f9f9f9;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#task-list li:hover {
+    background: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+#clear-completed {
+    margin-top: 10px;
+    background-color: #ff6347;
+}
+
+#clear-completed:hover {
+    background-color: #eb3216;
+}
+
+@media (max-width: 600px) {
+    #task-input {
+        width: 60%;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+footer {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: #286e2b;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 13px;
+}
