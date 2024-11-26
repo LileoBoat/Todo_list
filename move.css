@@ -1,7 +1,9 @@
 body {
     font-family: "Arial", sans-serif;
     background: linear-gradient(120deg, #f6d365, #fda085);
-    background-image: linear-gradient(rgba(81, 111, 112, 0.409),rgba(114, 145, 175, 0.5)),url();
+    background-image: linear-gradient(rgba(81, 111, 112, 0.409),rgba(114, 145, 175, 0.5)),url(Images/IMG_4761.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     color: #444;
@@ -9,6 +11,7 @@ body {
 
 .container {
     max-width: 600px;
+    height: auto;
     margin: 50px auto;
     background-color: #fff;
     background-image: linear-gradient(rgba(81, 111, 112, 0.409),rgba(114, 145, 175, 0.5)),url(Images/Vicky.jpg);
