@@ -32,3 +32,4 @@ taskInput.addEventListener('keydown', (event) => {
         addTaskButton.click();
     }
 });
+

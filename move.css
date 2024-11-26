@@ -23,13 +23,15 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #4CAF50;
+    background-color: #673AB7;
     color: white;
 }
 
 header h1 {
+    text-align: center;
     margin: 0;
     font-size: 24px;
+    animation-duration: fadeIn 2s ease-in-out;
 }
 
 header p {
@@ -54,12 +56,12 @@ header p {
 }
 
 #task-input:focus {
-    border-color: #4CAF50;
+    border-color: #651FFF;
 }
 
 button {
     padding: 10px 15px;
-    background-color: #4CAF50;
+    background-color: #7CB9E8;
     color: white;
     border: none;
     border-radius: 20px;
@@ -69,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2a5678;
     transform: scale(1.1);
 }
 
@@ -80,15 +82,20 @@ button:hover {
 }
 
 #task-list li {
-    background: #f9f9f9;
-    margin: 10px auto;
-    padding: 10px 20px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 16px;
     text-align: left;
     transition: all 0.3s ease;
     cursor: pointer;
+    animation: slideIn 0.5s ease-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out;
 }
 
 #task-list li:hover {
@@ -121,11 +128,41 @@ button:hover {
     }
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 footer {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    background: #286e2b;
+    background: #673AB7;
     color: white;
     padding: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
@@ -133,3 +170,22 @@ footer {
     overflow: hidden;
     font-size: 13px;
 }
+
+.suggestion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: large;
+}
+
+.suggestion-list li {
+    color: #7CB9E8;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
